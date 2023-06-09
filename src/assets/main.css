@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: mundo-sans, arial, helvetica;
+}
+
+@font-face {
+  font-family: 'mundo-sans';
+  src: url('./fonts/Mundo Sans Std Regular.otf') format('truetype');
+}
