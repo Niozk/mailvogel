@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #34ECB3;
+  --primary-color: #13e9a5;
   --secondary-color: #3454D1;
   --letter-color-dark: #303030;
   --letter-color-light: white;
@@ -33,11 +33,13 @@ a {
 }
 
 p {
-  padding: 0;
+  margin: 0;
   color: var(--letter-color-dark);
 }
 
 button {
+  border: 0;
+  font-family: mundo-sans, arial, helvetica;
   background: none;
   white-space: nowrap;
   cursor: pointer;
