@@ -41,13 +41,13 @@ const navList2Items = ref([
     {text: 'Contact', href: '#', click: ''}
 ])
 
-const isNavVisible = ref(window.innerWidth > 900);
+const isNavVisible = ref(window.innerWidth > 950);
 const logoColor = ref(['logo-mascot.png', 'logo-mascot-light.png'])
 const currentIndex = ref(0);
 
 onMounted(() => {
     window.addEventListener('resize', () => {
-        isNavVisible.value = window.innerWidth > 900;
+        isNavVisible.value = window.innerWidth > 950;
     });
 
     window.addEventListener('scroll', function(){
@@ -117,7 +117,7 @@ nav a {
 }
 
 .nav-list-2 {
-    padding-left: 5vw;
+    padding-left: 10vw;
 }
 
 .nav-list-2 li a {
@@ -171,6 +171,7 @@ nav a {
     position: sticky;
     top: 0;
     z-index: 1;
+    background-color: white;
     transition: 0.6s;
 }
 
@@ -206,7 +207,7 @@ nav a {
 }
 
 @media only screen 
-and (max-width: 900px) {
+and (max-width: 950px) {
     nav {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
