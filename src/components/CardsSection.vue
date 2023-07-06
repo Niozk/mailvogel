@@ -14,6 +14,17 @@ import Card from './Card.vue';
 .card-section {
     display: flex;
     justify-content: center;
-    height: 80vh;
+    gap: 50px;
+    margin: 0 0 300px 0;
+}
+
+@media only screen 
+and (max-width: 1250px) {
+    .card-section {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        margin: 0 0 200px 0;
+    }
 }
 </style>

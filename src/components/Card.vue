@@ -19,7 +19,6 @@ const props = defineProps({
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 25px;
     padding: 40px;
     width: 280px;
     height: 360px;
@@ -57,7 +56,6 @@ const props = defineProps({
 @media only screen 
 and (max-width: 420px) {
     .card {
-        margin: 0px;
         width: 250px;
     }
 }
