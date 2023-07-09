@@ -9,8 +9,7 @@
 
 <script setup>
 const props = defineProps({
-    icon: String,
-    text: String
+    icon: String
 });
 </script>
 
