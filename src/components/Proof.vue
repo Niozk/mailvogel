@@ -74,4 +74,62 @@ const props = defineProps({
 .company {
     font-size: 1.2rem;
 }
+
+@media only screen 
+and (max-width: 1250px) {
+    .proof {
+        max-width: 800px;
+    }
+
+    .proof-text {
+        font-size: 1.2rem;
+    }
+
+    .proof-text i {
+        font-size: 2.7rem;
+        color: var(--secondary-color);
+    }
+
+    .name {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+
+    .company {
+        font-size: 1rem;
+    }
+}
+
+@media only screen 
+and (max-width: 1000px) {
+    .proof {
+        display: flex;
+        flex-direction: column;
+        width: 440px;
+        height: 700px;
+    }
+
+    .proof img {
+        place-self: center;
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media only screen 
+and (max-width: 700px) {
+    .proof {
+        width: 260px;
+        height: 800px;
+    }
+
+    .proof-text {
+        font-size: 1.1rem;
+    }
+
+    .proof img {
+        width: 200px;
+        height: 250px;
+    }
+}
 </style>

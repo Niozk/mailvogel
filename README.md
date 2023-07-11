@@ -11,6 +11,7 @@ Front-end
 -pinia
 -motion.js
 -flag-icons
+-splide.js
 
 Dev Dependencies
 ========

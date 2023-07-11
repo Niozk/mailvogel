@@ -170,7 +170,7 @@ nav a {
 .nav-class {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     background-color: white;
     transition: 0.6s;
 }
@@ -232,7 +232,7 @@ aside {
     display: flex;
     flex-direction: column; 
     position: fixed;
-    z-index: 10;
+    z-index: 15;
     top: 0;
     right: 0;
     width: 0;
