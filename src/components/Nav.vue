@@ -2,7 +2,7 @@
     <div class="nav-class">
         <nav>
             <ul class="nav-list-1">
-                <li class="logo"><a href="#"><img :src="logoColor[currentIndex]" alt="Logo of site"></a></li>
+                <li class="logo"><a href="#" @click="linkToHome"><img :src="logoColor[currentIndex]" alt="Logo of site"></a></li>
             </ul>
             <ul class="nav-list-2" v-if="isNavVisible">
                 <li v-for="item in navList2Items" :key="item"><a :href="item.href" @click="item.click">{{ item.text }}</a></li>
@@ -29,6 +29,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useRouter } from 'vue-router';
 
 const navList1Items = ref([
     {flag: 'fi fi-nl', click: ''},
@@ -36,9 +37,9 @@ const navList1Items = ref([
 ])
 
 const navList2Items = ref([
-    {text: 'Onze dienst', href: '#working-section', click: ''},
-    {text: 'Over ons', href: '#', click: ''},
-    {text: 'Contact', href: '#appointment-section', click: ''}
+    {text: 'Onze dienst', href: '#working-section', click: linkToHome},
+    {text: 'Over ons', href: '', click: linkToAboutUs},
+    {text: 'Contact', href: '#appointment-section', click: linkToHome}
 ])
 
 const isNavVisible = ref(window.innerWidth > 950);
@@ -90,6 +91,16 @@ function closeSidemenuOnClick() {
             closeSidemenu();
         }
     })
+}
+
+const router = useRouter();
+
+function linkToHome() {
+    router.push('/');
+}
+
+function linkToAboutUs() {
+    router.push('/about-us');
 }
 </script>
 

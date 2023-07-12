@@ -3,7 +3,7 @@
         <div class="content">
             <p>Mailvogel © 2023</p>
             <ul>
-                <li v-for="item in linkList"><a :href="item.href">{{ item.text }}</a></li>
+                <li v-for="item in linkList"><a :href="item.href" @click="item.click">{{ item.text }}</a></li>
             </ul>
         </div>
     </footer>
@@ -11,13 +11,24 @@
 
 <script setup>
 import { ref } from 'vue'
+import { useRouter } from 'vue-router';
 
 const linkList = ref([
-    {text: 'Onze dienst', href: '#working-section'},
-    {text: 'Over ons', href: '#'},
-    {text: 'Contact', href: '#appointment-section'},
-    {text: 'Afspraak maken', href: '#appointment-section'}
+    {text: 'Onze dienst', href: '#working-section', click: linkToHome},
+    {text: 'Over ons', href: '', click: linkToAboutUs},
+    {text: 'Contact', href: '#appointment-section', click: linkToHome},
+    {text: 'Afspraak maken', href: '#appointment-section', click: linkToHome}
 ])
+
+const router = useRouter();
+
+function linkToHome() {
+    router.push('/');
+}
+
+function linkToAboutUs() {
+    router.push('/about-us');
+}
 
 </script>
 
@@ -49,7 +60,6 @@ a {
     font-size: 1rem;
     color: var(--letter-color-light);
 }
-
 
 @media only screen 
 and (max-width: 700px) {

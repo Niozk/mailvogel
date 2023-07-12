@@ -60,6 +60,10 @@ onMounted(() => {
     text-align: center;
 }
 
+.etext p {
+    font-size: 1.1rem
+}
+
 .etext a {
     border: 1px solid var(--primary-color);
     transition: 0.3s;
