@@ -23,7 +23,6 @@ const props = defineProps({
     height: 360px;
     opacity: 0.8;
     background-color: var(--secondary-color);
-    border: 2px solid #7591ff;
     border-radius: 15px;
     text-align: center;
     transition: 0.4s ease-in-out;

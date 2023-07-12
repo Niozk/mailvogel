@@ -11,7 +11,7 @@
                 <div class="language-list">
                     <li v-for="item in navList1Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
                 </div>
-                <button class="appointment-button">Afspraak maken</button>
+                <a class="appointment-button" href="#appointment-section">Afspraak maken</a>
             </ul>
             <button class="fa-solid fa-bars open-button" id="open-button" @click="openSidemenu()" v-if="!isNavVisible"></button>
         </nav>
@@ -36,9 +36,9 @@ const navList1Items = ref([
 ])
 
 const navList2Items = ref([
-    {text: 'Onze dienst', href: '#', click: ''},
+    {text: 'Onze dienst', href: '#working-section', click: ''},
     {text: 'Over ons', href: '#', click: ''},
-    {text: 'Contact', href: '#', click: ''}
+    {text: 'Contact', href: '#appointment-section', click: ''}
 ])
 
 const isNavVisible = ref(window.innerWidth > 950);
@@ -152,6 +152,7 @@ nav a {
     border: 2px solid var(--primary-color);
     border-radius: 10px;
     transition: 0.3s ease-out;
+    cursor: pointer;
 }
 
 .appointment-button:hover {
