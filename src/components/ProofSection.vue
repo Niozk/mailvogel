@@ -1,24 +1,25 @@
 <template>
     <section class="proof-section">
         <div class="container">
-            <h2>Kijk naar wat onze klanten te zeggen hebben</h2>
+            <h2>Ontdek wat onze klanten te zeggen hebben</h2>
             <div class="carousel">
                 <Splide :options="{ rewind: true, autoplay: true, pauseOnHover: true, gap: '75px', width: widthBreakpoint[currentWidthBreakpoint] }">
                     <SplideSlide>
-                        <Proof img="/logo-mascot.png" name="jan piet" company="companyXYZ">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores nisi commodi, maiores sit velit fugiat error exercitationem, 
-                            cupiditate quod sed eius tenetur porro repellat illo deserunt perferendis illum hic quas?
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti reiciendis laborum quibusdam unde perspiciati
+                        <Proof img="/3j48fqja3jkf3.png" name="Tim Leeuwendijk" company="dSPACE">
+                            Geweldige service en resultaten! Dankzij het team van Mailvogel heb ik mijn klantenbestand zien groeien en 
+                            mijn omzet zien verhogen. Ze leveren echt op maat gemaakte strategieën die werken.
                         </Proof>
                     </SplideSlide>
                     <SplideSlide>
-                        <Proof img="/logo-mascot.png" name="jan piet" company="companyXYZ">
-                            2222222222222222
+                        <Proof img="/1e3qe12e2ead.png" name="Sara Faro" company="Sara Marketing">
+                            Ik ben onder de indruk van de creatieve campagnes die Mailvogel voor ons heeft ontwikkeld. 
+                            Onze merkbekendheid is aanzienlijk toegenomen en we hebben nieuwe zakelijke kansen gegenereerd. 
+                            Een geweldige samenwerking!
                         </Proof>
                     </SplideSlide>
                     <SplideSlide>
-                        <Proof img="/logo-mascot.png" name="jan piet" company="companyXYZ">
-                            3333333333333333333333
+                        <Proof img="/8187b161ba3820af63.png" name="Tony Liu" company="Omnichannel">
+                            Mailvogel heeft onze doelgroep vergroot en onze online conversies verhoogd. Dit zijn nou echte experts!
                         </Proof>
                     </SplideSlide>
                 </Splide>

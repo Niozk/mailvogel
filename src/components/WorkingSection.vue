@@ -1,19 +1,20 @@
 <template>
     <section class="working-section" id="working-section">
         <div class="container">
-            <h2>Je bespaart veel tijd door middel van onze producten, wat jij weer in je main proces kan gooien</h2>
+            <h2>Boost je efficiëntie en bespaar tijd met onze dienst</h2>
             <div class="content">
                 <div class="content-text">
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae qui id facere animi quidem placeat. 
-                        Mollitia nihil animi explicabo nisi impedit fugiat est, omnis rerum eos totam. Odio, molestias ea!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, dolorum. Autem magni ex exercitationem inventore 
-                        porro omnis natus temporibus, nulla sequi asperiores veritatis repellendus vero nam, quos dolor facilis obcaecati.
+                        Eerst stellen we een lijst samen van jouw ideale klanten die de besluitvormers zijn van de bedrijven waarmee je graag zou willen samenwerken. 
+                        Vervolgens creëren we een aanbod voor jouw bedrijf op basis van jouw waardeproposities. 
+                        Tot slot maken we gebruik van onze AI-gebaseerde cold-outreach systeem om het hele proces voor jouw te automatiseren. 
+                        <br><br>
+                        Het enige wat jij hoeft te doen is op het gesprek te verschijnen en jouw aanbod aan jouw cliënt te verkopen.
                     </p>
                 </div>
                 <div class="content-stats content-stats-1">
                     <p class="stats">7x</p>
-                    <p class="stats-text">tijd bespaard met het zoeken van klanten</p>
+                    <p class="stats-text">Hogere conversiepercentage van klanten</p>
                 </div>
                 <div class="content-stats content-stats-2">
                     <p class="stats">90%</p>

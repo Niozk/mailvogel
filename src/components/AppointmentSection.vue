@@ -1,12 +1,16 @@
 <template>
     <section class="appointment-section" id="appointment-section">
         <div class="container">
-            <h2>Waar wacht je op? maak een afspraak!</h2>
+            <h2>
+                Klaar om jouw bedrijf te laten groeien? 
+                <br><br>
+                Maak een afspraak!
+            </h2>
             <div class="content">
-                <div class="calendly-inline-widget" data-url="https://calendly.com/mailvogel/30min?hide_event_type_details=1" style="min-width:320px;height:600px;"></div>
+                <div class="calendly-inline-widget" data-url="https://calendly.com/mailvogel/30min" style="min-width:320px;height:600px;"></div>
             </div>
             <div class="etext">
-                <p>Vragen? Stuur een email naar:</p>
+                <p>Vragen? Stuur een e-mail naar</p>
                 <a href='&#109;ailt&#111;&#58;info&#64;m&#97;%&#54;9lv%6&#70;&#103;e&#108;%&#50;Enl'>inf&#111;&#64;&#109;&#97;i&#108;vog&#101;l&#46;nl</a>
             </div>
         </div>

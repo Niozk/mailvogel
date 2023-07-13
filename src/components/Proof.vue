@@ -36,7 +36,7 @@ const props = defineProps({
 }
 
 .proof img {
-    width: 350px;
+    width: 380px;
     height: 400px;
     border-radius: 15px;
 }
@@ -111,7 +111,7 @@ and (max-width: 1000px) {
 
     .proof img {
         place-self: center;
-        width: 250px;
+        width: 280px;
         height: 300px;
     }
 }
@@ -120,7 +120,7 @@ and (max-width: 1000px) {
 and (max-width: 700px) {
     .proof {
         width: 260px;
-        height: 800px;
+        height: 700px;
     }
 
     .proof-text {
@@ -128,7 +128,7 @@ and (max-width: 700px) {
     }
 
     .proof img {
-        width: 200px;
+        width: 230px;
         height: 250px;
     }
 }
