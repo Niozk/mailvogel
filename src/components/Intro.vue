@@ -6,6 +6,16 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
+import { animate } from "motion";
+
+onMounted(() => {
+    animate(
+        ".intro-container",
+        { y: -10, opacity: [0, 1] },
+        { duration: 1.2 }
+    )
+});
 </script>
 
 <style scoped>

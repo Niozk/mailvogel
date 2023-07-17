@@ -1,7 +1,7 @@
 <template>
     <section class="appointment-section" id="appointment-section">
         <div class="container">
-            <h2>
+            <h2 class="h2-animate">
                 {{ $t("appointmentSection.H2-1") }}
                 <br><br>
                 {{ $t("appointmentSection.H2-2") }}
@@ -19,12 +19,21 @@
 
 <script setup>
 import { onMounted } from "vue";
+import { animate, inView } from "motion";
 
 onMounted(() => {
     const script = document.createElement('script');
     script.src = 'https://assets.calendly.com/assets/external/widget.js';
     script.async = true;
     document.body.appendChild(script);
+
+    inView('.h2-animate', () => {
+        animate(
+            ".h2-animate",
+            { y: -10, opacity: [0, 1] },
+            { duration: 1.4 }
+        )
+    })
 });
 </script>
 
