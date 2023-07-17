@@ -1,8 +1,8 @@
 <template>
     <section class="card-section">
-        <Card icon="fa-solid fa-rocket">Super makkelijk om te beginnen. Met onze naadloze implementatie nemen wij alle zorgen uit handen</Card>
-        <Card icon="fa-solid fa-shield">Ons model garandeert dat er geen risico aan verbonden is, als we je geen resultaten kunnen bezorgen, betaal je niet</Card>
-        <Card icon="fa-solid fa-chart-line">Laat ons jou helpen om je winst te verhogen. Verhoog je winst met €54.000 in slechts 7 maanden of minder!</Card>
+        <Card icon="fa-solid fa-rocket">{{ $t("cardsSection.card1") }}</Card>
+        <Card icon="fa-solid fa-shield">{{ $t("cardsSection.card2") }}</Card>
+        <Card icon="fa-solid fa-chart-line">{{ $t("cardsSection.card3") }}</Card>
     </section>
 </template>
 

@@ -1,24 +1,22 @@
 <template>
     <section class="working-section" id="working-section">
         <div class="container">
-            <h2>Boost je efficiëntie en bespaar tijd met onze dienst</h2>
+            <h2>{{ $t("workingSection.H2") }}</h2>
             <div class="content">
                 <div class="content-text">
                     <p>
-                        Eerst stellen we een lijst samen van jouw ideale klanten die de besluitvormers zijn van de bedrijven waarmee je graag zou willen samenwerken. 
-                        Vervolgens creëren we een aanbod voor jouw bedrijf op basis van jouw waardeproposities. 
-                        Tot slot maken we gebruik van onze AI-gebaseerde cold-outreach systeem om het hele proces voor jouw te automatiseren. 
+                        {{ $t("workingSection.contentText1") }}
                         <br><br>
-                        Het enige wat jij hoeft te doen is op het gesprek te verschijnen en jouw aanbod aan jouw cliënt te verkopen.
+                        {{ $t("workingSection.contentText2") }}
                     </p>
                 </div>
                 <div class="content-stats content-stats-1">
                     <p class="stats">7x</p>
-                    <p class="stats-text">Hogere conversiepercentage van klanten</p>
+                    <p class="stats-text">{{ $t("workingSection.stats1Text") }}</p>
                 </div>
                 <div class="content-stats content-stats-2">
                     <p class="stats">90%</p>
-                    <p class="stats-text">Tijd bespaard met het zoeken van klanten</p>
+                    <p class="stats-text">{{ $t("workingSection.stats2Text") }}</p>
                 </div>
             </div>
         </div>

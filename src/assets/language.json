@@ -1,0 +1,88 @@
+{
+    "nl": {
+        "nav": {
+            "nav1": "Onze dienst",
+            "nav2": "Over ons",
+            "nav3": "Contact",
+            "appointmentButton": "Afspraak maken"
+        },
+        "intro": {
+            "H2": "De makkelijkste manier om in contact te komen met potentiële klanten"
+        },
+        "cardsSection": {
+            "card1": "Super makkelijk om te beginnen. Met onze naadloze implementatie nemen wij alle zorgen uit handen",
+            "card2": "Ons model garandeert dat er geen risico aan verbonden is, als we je geen resultaten kunnen bezorgen, betaal je niet",
+            "card3": "Laat ons jou helpen om je winst te verhogen. Verhoog je winst met €54.000 in slechts 7 maanden of minder!"
+        },
+        "workingSection": {
+            "H2": "Boost je efficiëntie en bespaar tijd met onze dienst",
+            "contentText1": "Eerst stellen we een lijst samen van jouw ideale klanten die de besluitvormers zijn van de bedrijven waarmee je graag zou willen samenwerken. Vervolgens creëren we een aanbod voor jouw bedrijf op basis van jouw waardeproposities. Tot slot maken we gebruik van onze AI-gebaseerde cold-outreach systeem om het hele proces voor jouw te automatiseren.",
+            "contentText2": "Het enige wat jij hoeft te doen is op het gesprek te verschijnen en jouw aanbod aan jouw cliënt te verkopen.",
+            "stats1Text": "Hogere conversiepercentage van klanten",
+            "stats2Text": "Tijd bespaard met het zoeken van klanten"
+        },
+        "proofSection": {
+            "H2": "Ontdek wat onze klanten te zeggen hebben",
+            "slide1": "Geweldige service en resultaten! Dankzij het team van Mailvogel heb ik mijn klantenbestand zien groeien en mijn omzet zien verhogen. Ze leveren echt op maat gemaakte strategieën die werken.",
+            "slide2": "Ik ben onder de indruk van de creatieve campagnes die Mailvogel voor ons heeft ontwikkeld. Onze merkbekendheid is aanzienlijk toegenomen en we hebben nieuwe zakelijke kansen gegenereerd. Een geweldige samenwerking!",
+            "slide3": "Mailvogel heeft onze doelgroep vergroot en onze online conversies verhoogd. Dit zijn nou echte experts!"
+        },
+        "appointmentSection": {
+            "H2-1": "Klaar om jouw bedrijf te laten groeien?",
+            "H2-2": "Maak een afspraak!",
+            "etext": "Vragen? Stuur een e-mail naar"
+        },
+        "aboutUsSection": {
+            "H2": "Over ons",
+            "contentText1": "Wij zijn een toonaangevend leadgeneratie agency gevestigd in Heemskerk dat zich richt op het leveren van kwalitatieve leads aan bedrijven. Met onze op maat gemaakte strategieën en geavanceerde technologieën helpen we bedrijven groeien door middel van effectieve leadgeneratie.",
+            "contentText2": "Neem vandaag nog contact met ons op en ontdek hoe we jouw bedrijf kunnen laten groeien!"
+        },
+        "vacancySection": {
+            "H2": "Geïnteresseerd om bij ons te werken?",
+            "etext": "Stuur jouw CV en motivatiebrief door naar"
+        }
+    },
+    "en": {
+        "nav": {
+            "nav1": "Our service",
+            "nav2": "About us",
+            "nav3": "Contact",
+            "appointmentButton": "Book appointment"
+        },
+        "intro": {
+            "H2": "The easiest way to get in touch with potential customers"
+        },
+        "cardsSection": {
+            "card1": "Super easy to get started. With our seamless implementation, we take care of all the worries",
+            "card2": "Our model guarantees that there is no risk involved. If we are unable to deliver results, you won't have to pay",
+            "card3": "Let us help you increase your profits. Boost your earnings by €54.000 in just 7 months or less!"
+        },
+        "workingSection": {
+            "H2": "Boost your efficiency and save time with our service",
+            "contentText1": "First, we compile a list of your ideal customers who are the decision-makers in the companies you would like to collaborate with. Then, we create an offer for your business based on your value propositions. Finally, we leverage our AI-based cold outreach system to automate the entire process for you.",
+            "contentText2": "The only thing you need to do is show up for the conversation and sell your offer to your client.",
+            "stats1Text": "Higher customer conversion rates",
+            "stats2Text": "Time saved in customer prospecting"
+        },
+        "proofSection": {
+            "H2": "Discover what our customers have to say",
+            "slide1": "Great service and results! Thanks to the Mailvogel team, I've seen my customer base grow and my revenue increase. They truly deliver customized strategies that work.",
+            "slide2": "I am impressed with the creative campaigns that Mailvogel has developed for us. Our brand awareness has significantly increased, and we have generated new business opportunities. It has been a great collaboration!",
+            "slide3": "Mailvogel has expanded our target audience and increased our online conversions. These are real experts!"
+        },
+        "appointmentSection": {
+            "H2-1": "Ready to grow your business?",
+            "H2-2": "Book an appointment!",
+            "etext": "Have any questions? Send an email to"
+        },
+        "aboutUsSection": {
+            "H2": "About us",
+            "contentText1": "We are a leading lead generation agency based in Heemskerk, specializing in delivering high-quality leads to businesses. With our customized strategies and advanced technologies, we help companies grow through effective lead generation.",
+            "contentText2": "Contact us today and discover how we can help grow your business!"
+        },
+        "vacancySection": {
+            "H2": "Are you interested in joining our team?",
+            "etext": "Please submit your CV and cover letter to"
+        }
+    }
+}

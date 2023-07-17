@@ -12,6 +12,7 @@ Front-end
 -motion.js
 -flag-icons
 -splide.js
+-Vue-i18n
 
 Dev Dependencies
 ========

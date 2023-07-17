@@ -2,15 +2,15 @@
     <section class="appointment-section" id="appointment-section">
         <div class="container">
             <h2>
-                Klaar om jouw bedrijf te laten groeien? 
+                {{ $t("appointmentSection.H2-1") }}
                 <br><br>
-                Maak een afspraak!
+                {{ $t("appointmentSection.H2-2") }}
             </h2>
             <div class="content">
                 <div class="calendly-inline-widget" data-url="https://calendly.com/mailvogel/30min" style="min-width:320px;height:600px;"></div>
             </div>
             <div class="etext">
-                <p>Vragen? Stuur een e-mail naar</p>
+                <p>{{ $t("appointmentSection.etext") }}</p>
                 <a href='&#109;ailt&#111;&#58;info&#64;m&#97;%&#54;9lv%6&#70;&#103;e&#108;%&#50;Enl'>inf&#111;&#64;&#109;&#97;i&#108;vog&#101;l&#46;nl</a>
             </div>
         </div>

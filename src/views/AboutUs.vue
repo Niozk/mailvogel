@@ -1,20 +1,18 @@
 <template>
     <section class="about-us-section">
-        <h2>Over ons</h2>
+        <h2>{{ $t("aboutUsSection.H2") }}</h2>
         <div class="about-us">
             <p>
-                Wij zijn een toonaangevend leadgeneratie agency gevestigd in Heemskerk dat zich richt op het leveren van kwalitatieve leads aan 
-                bedrijven. Met onze op maat gemaakte strategieën en geavanceerde technologieën helpen we bedrijven groeien 
-                door middel van effectieve leadgeneratie. 
+                {{ $t("aboutUsSection.contentText1") }}
                 <br><br>
-                Neem vandaag nog contact met ons op en ontdek hoe we jouw bedrijf kunnen laten groeien!
+                {{ $t("aboutUsSection.contentText2") }}
             </p>
         </div>
     </section>
     <section class="vacancy-section">
         <div class="vacancy">
-            <h2>Geïnteresseerd om bij ons te werken?</h2>
-            <p>Stuur jouw CV en motivatiebrief door naar</p>
+            <h2>{{ $t("vacancySection.H2") }}</h2>
+            <p>{{ $t("vacancySection.etext") }}</p>
             <div class="etext">
                 <a href='&#109;ailt&#111;&#58;info&#64;m&#97;%&#54;9lv%6&#70;&#103;e&#108;%&#50;Enl'>inf&#111;&#64;&#109;&#97;i&#108;vog&#101;l&#46;nl</a>
             </div>

@@ -1,25 +1,22 @@
 <template>
     <section class="proof-section">
         <div class="container">
-            <h2>Ontdek wat onze klanten te zeggen hebben</h2>
+            <h2>{{ $t("proofSection.H2") }}</h2>
             <div class="carousel">
                 <Splide :options="{ rewind: true, autoplay: true, pauseOnHover: true, gap: '75px', width: widthBreakpoint[currentWidthBreakpoint] }">
                     <SplideSlide>
                         <Proof img="/3j48fqja3jkf3.png" name="Tim Leeuwendijk" company="dSPACE">
-                            Geweldige service en resultaten! Dankzij het team van Mailvogel heb ik mijn klantenbestand zien groeien en 
-                            mijn omzet zien verhogen. Ze leveren echt op maat gemaakte strategieën die werken.
+                            {{ $t("proofSection.slide1") }}
                         </Proof>
                     </SplideSlide>
                     <SplideSlide>
-                        <Proof img="/1e3qe12e2ead.png" name="Sara Faro" company="Sara Marketing">
-                            Ik ben onder de indruk van de creatieve campagnes die Mailvogel voor ons heeft ontwikkeld. 
-                            Onze merkbekendheid is aanzienlijk toegenomen en we hebben nieuwe zakelijke kansen gegenereerd. 
-                            Een geweldige samenwerking!
+                        <Proof img="/83afy38jua3da2.png" name="Sara Faro" company="Sara Marketing">
+                            {{ $t("proofSection.slide2") }}
                         </Proof>
                     </SplideSlide>
                     <SplideSlide>
                         <Proof img="/8187b161ba3820af63.png" name="Tony Liu" company="Omnichannel">
-                            Mailvogel heeft onze doelgroep vergroot en onze online conversies verhoogd. Dit zijn nou echte experts!
+                            {{ $t("proofSection.slide3") }}
                         </Proof>
                     </SplideSlide>
                 </Splide>

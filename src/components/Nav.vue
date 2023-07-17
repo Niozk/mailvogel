@@ -11,7 +11,7 @@
                 <div class="language-list">
                     <li v-for="item in navList1Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
                 </div>
-                <a class="appointment-button" href="#appointment-section">Afspraak maken</a>
+                <a class="appointment-button" href="#appointment-section">{{ $t("nav.appointmentButton") }}</a>
             </ul>
             <button class="fa-solid fa-bars open-button" id="open-button" @click="openSidemenu()" v-if="!isNavVisible"></button>
         </nav>
@@ -30,6 +30,9 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const navList1Items = ref([
     {flag: 'fi fi-nl', click: ''},
@@ -37,9 +40,9 @@ const navList1Items = ref([
 ])
 
 const navList2Items = ref([
-    {text: 'Onze dienst', href: '#working-section', click: linkToHome},
-    {text: 'Over ons', href: '', click: linkToAboutUs},
-    {text: 'Contact', href: '#appointment-section', click: linkToHome}
+    {text: t("nav.nav1"), href: '#working-section', click: linkToHome},
+    {text: t("nav.nav2"), href: '', click: linkToAboutUs},
+    {text: t("nav.nav3"), href: '#appointment-section', click: linkToHome}
 ])
 
 const isNavVisible = ref(window.innerWidth > 950);

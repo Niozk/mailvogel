@@ -12,12 +12,15 @@
 <script setup>
 import { ref } from 'vue'
 import { useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 
 const linkList = ref([
-    {text: 'Onze dienst', href: '#working-section', click: linkToHome},
-    {text: 'Over ons', href: '', click: linkToAboutUs},
-    {text: 'Contact', href: '#appointment-section', click: linkToHome},
-    {text: 'Afspraak maken', href: '#appointment-section', click: linkToHome}
+    {text: t("nav.nav1"), href: '#working-section', click: linkToHome},
+    {text: t("nav.nav2"), href: '', click: linkToAboutUs},
+    {text: t("nav.nav3"), href: '#appointment-section', click: linkToHome},
+    {text: t("nav.appointmentButton"), href: '#appointment-section', click: linkToHome}
 ])
 
 const router = useRouter();

@@ -1,7 +1,7 @@
 <template>
     <section class="intro-container">
         <h1>Mailvogel</h1>
-        <h2>De makkelijkste manier om in contact te komen met potentiële klanten</h2>
+        <h2>{{ $t("intro.H2") }}</h2>
     </section>
 </template>
 
