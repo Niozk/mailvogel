@@ -12,10 +12,12 @@ import language from './assets/language.json'
 
 const app = createApp(App)
 
+const savedLanguage = localStorage.getItem('language');
+
 const i18n = createI18n({
     legacy: false,
     globalInjection: true,
-    locale: 'nl',
+    locale: savedLanguage || 'nl',
     messages: language
 })
   

@@ -9,7 +9,7 @@
             </ul>
             <ul class="nav-list-3" v-if="isNavVisible">
                 <div class="language-list">
-                    <li v-for="item in navList1Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
+                    <li v-for="item in navList3Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
                 </div>
                 <a class="appointment-button" href="#appointment-section">{{ $t("nav.appointmentButton") }}</a>
             </ul>
@@ -22,27 +22,27 @@
             <li v-for="item in navList2Items" :key="item"><a :href="item.href" @click="item.click">{{ item.text }}</a></li>
         </ul>
         <ul class="sidemenu-buttons">
-            <li v-for="item in navList1Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
+            <li v-for="item in navList3Items" :key="item"><button @click="item.click"><i :class="item.flag"></i></button></li>
         </ul>
     </aside>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 import { useI18n } from 'vue-i18n';
 
-const { t } = useI18n();
-
-const navList1Items = ref([
-    {flag: 'fi fi-nl', click: ''},
-    {flag: 'fi fi-gb', click: ''}
-])
+const { t, locale } = useI18n();
 
 const navList2Items = ref([
     {text: t("nav.nav1"), href: '#working-section', click: linkToHome},
     {text: t("nav.nav2"), href: '', click: linkToAboutUs},
     {text: t("nav.nav3"), href: '#appointment-section', click: linkToHome}
+])
+
+const navList3Items = ref([
+    {flag: 'fi fi-nl', click: () => changeLocale('nl')},
+    {flag: 'fi fi-gb', click: () => changeLocale('en')}
 ])
 
 const isNavVisible = ref(window.innerWidth > 950);
@@ -65,6 +65,14 @@ onMounted(() => {
     });
 
     closeSidemenuOnClick();
+});
+
+watchEffect(() => {
+    navList2Items.value = [
+        { text: t('nav.nav1'), href: '#working-section', click: linkToHome },
+        { text: t('nav.nav2'), href: '', click: linkToAboutUs },
+        { text: t('nav.nav3'), href: '#appointment-section', click: linkToHome }
+    ];
 });
 
 function openSidemenu() {
@@ -104,6 +112,11 @@ function linkToHome() {
 
 function linkToAboutUs() {
     router.push('/about-us');
+}
+
+function changeLocale(language) {
+    locale.value = language;
+    localStorage.setItem('language', locale.value);
 }
 </script>
 
