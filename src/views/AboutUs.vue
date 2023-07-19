@@ -100,6 +100,10 @@ and (max-width: 500px) {
         color: var(--letter-color-dark)
     }
 
+    .about-us {
+        text-align: center;
+    }
+
     .about-us p {
         font-size: 1.5rem;
     }
